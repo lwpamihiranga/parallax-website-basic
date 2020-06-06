@@ -1,0 +1,87 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.p-img-1 {
+  background-image: url("../images/image1.jpg");
+  min-height: 100%;
+}
+
+.p-img-2 {
+  background-image: url("../images/image2.jpg");
+  min-height: 500px;
+}
+
+.p-img-3 {
+  background-image: url("../images/image3.jpg");
+  min-height: 500px;
+}
+
+.p-img-1,
+.p-img-2,
+.p-img-3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  /* below property add the parallax effect.
+  to remove it make it to the value 'scroll' */
+  background-attachment: fixed;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.p-text {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.p-text .border {
+  background-color: #777777;
+  color: #fff;
+  padding: 20px;
+}
+
+.p-text .border.trans {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 568px) {
+  .p-img-1,
+  .p-img-2,
+  .p-img-3 {
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .p-text {
+    font-size: 16px;
+  }
+}
